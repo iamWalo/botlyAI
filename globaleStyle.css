@@ -7,13 +7,16 @@
 }
 
 :root {
-    --page-background-color: #EBEEE9;
-    --lineaar-background: linear-gradient(to right, #8EDB09, #FFF000);
+    --page-background-color-1: #EBEEE9;
+    --page-background-color-2: #fff;
+    --linear-background: linear-gradient(to right, #8EDB09, #FFF000);
+    --text-color: #2C2C2C;
 }
 
 body {
     background-color: var(--page-background-color);
     overflow-x: hidden;
+    font-family: "Switzer", sans-serif;
 }
 
 section,
@@ -38,13 +41,19 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Poppins", serif;
+    color: var(--text-color);
+}
+
+button,
+a {
+    cursor: pointer;
 }
 
 .linear-btn-style {
-    background: var(--lineaar-background);
+    background: var(--linear-background);
     width: 165px;
     height: 50px;
     border-radius: 24px;
     border: none;
+    cursor: pointer;
 }

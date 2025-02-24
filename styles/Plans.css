@@ -1,0 +1,153 @@
+/* استيراد الخط */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.plans-section {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--page-background-color-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    margin: 0;
+    padding: 108px 0 149px 0;
+    text-align: center;
+}
+
+.plans-section h1 {
+    margin-bottom: 34px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.pricing-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* تصميم البطاقة */
+.pricing-card {
+    background-color: var(--page-background-color-1);
+    width: 400px;
+    height: 695px;
+    padding: 92px 24px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #e0e8cf;
+    margin: 0 10px;
+}
+
+.ribbon {
+    position: absolute;
+    top: 81px;
+    left: -16px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 47px;
+    transform: rotate(-45deg);
+    transform-origin: left top;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    clip-path: polygon(17% 0%, 83% 0%, 100% 100%, 0% 100%);
+}
+
+/* تحسين الأطراف لجعلها حادة ومتناسقة */
+.ribbon::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+
+/* عنوان الخطة */
+.plan-title {
+    font-size: 22px;
+    font-weight: normal;
+    color: #333;
+    margin: 10px 0 15px 0;
+    color: #2c2c2cdd;
+}
+
+/* وصف الخطة */
+.plan-description {
+    font-size: 16px;
+    color: #2c2c2cb2;
+    margin-top: 5px;
+    margin-bottom: 28px;
+}
+
+/* السعر */
+.price {
+    font-size: 22px;
+    font-weight: 200;
+    margin-bottom: 15px;
+    color: #2c2c2c82;
+}
+
+.price span {
+    font-size: 52px;
+    font-weight: bold;
+    color: #2c2c2cd7;
+}
+
+/* الخط الفاصل */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 15px 0;
+}
+
+/* مميزات الخطة */
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 28px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    text-align: left;
+    gap: 0;
+}
+
+.features li {
+    font-size: 14px;
+    margin: 8px 0;
+    color: #333;
+    padding-left: 25px;
+    position: relative;
+}
+
+/* أيقونات المميزات */
+.features li::before {
+    content: "•";
+    color: #7ed321;
+    font-weight: bold;
+    position: absolute;
+    left: 5px;
+    font-size: 20px;
+}
+
+/* زر الترقية */
+.upgrade-button {
+    color: #2C2C2C;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+    width: 190px;
+    height: 44px;
+    margin-top: 58px;
+    transition: 0.3s;
+
+}

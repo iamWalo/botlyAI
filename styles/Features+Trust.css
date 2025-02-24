@@ -1,6 +1,8 @@
 .features-trust {
+    height: 850px;
+    padding-bottom: 100px;
     background-color: #fff;
-    padding: 134px 0;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,7 +36,7 @@
 .icon-box {
     width: 82px;
     height: 80px;
-    background: var(--lineaar-background);
+    background: var(--linear-background);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,13 +55,15 @@
 }
 
 .trust {
-    margin-top: 50px;
+    margin: 50px 0 150px 0;
     display: grid;
-    grid-template-columns: repeat(4, 2fr);
+    grid-template-columns: repeat(5, 2fr);
     align-items: center;
     justify-content: center;
-    width: auto;
-    grid-gap: 100px;
+    width: 156px;
+    height: 30px;
+    grid-gap: 80px;
+
 }
 
 .trust div {

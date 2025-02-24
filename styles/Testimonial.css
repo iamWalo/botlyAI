@@ -1,0 +1,42 @@
+.testimonial {
+    background-color: var(--page-background-color-1);
+    width: 100%;
+    height: 516px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.testimonial h3 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.testimonial-content {
+    margin-top: 5.6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-row-gap: 40px;
+    grid-column-gap: 100px;
+}
+
+.testimonial-content div {
+    width: 505px;
+    height: 106px;
+    text-align: left;
+}
+
+.testimonial-content div p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.testimonial-content div span {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #2c2c2cb8;
+}
