@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 90px;
+    padding-bottom: 136px;
+}
+
+.hero p,
+.hero h1 {
+    font-size: 32px;
+    font-family: "Poppins", serif;
+    color: #2C2C2C;
+}
+
+.hero h1 {
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+
+.hero-text {
+    position: relative;
+    display: inline-block;
+}
+
+
+.hero-text p {
+    position: relative;
+    line-height: 57px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.highlight {
+    position: relative;
+    font-weight: bold;
+    display: inline-block;
+    padding-bottom: 5px;
+    /* زيادة المسافة بين النص والخط */
+}
+
+.highlight::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    /* رفع الخط قليلاً للأعلى */
+    width: 100%;
+    height: 15px;
+    /* زيادة ارتفاع الخط لتجنب القص */
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 20"><path d="M5 12 Q 40 -4, 70 9 T 130 12" stroke="%2382c965" stroke-width="4" fill="none" stroke-linecap="round"/></svg>') no-repeat center;
+    background-size: contain;
+}
+
+.email-form {
+    margin-bottom: 70px;
+}
+
+.email-form form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.email-form .input-div {
+    width: 525px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 13px 20px;
+}
+
+.email-form .input-div input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
