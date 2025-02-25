@@ -5,6 +5,7 @@
 
 
 header {
+    background-color: var(--page-background-color-1);
     display: flex;
     align-items: center;
     justify-content: space-between;

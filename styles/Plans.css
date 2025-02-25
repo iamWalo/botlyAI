@@ -28,6 +28,7 @@
 
 /* تصميم البطاقة */
 .pricing-card {
+    position: relative;
     background-color: var(--page-background-color-1);
     width: 400px;
     height: 695px;
@@ -99,6 +100,15 @@
     color: #2c2c2cd7;
 }
 
+.price.free {
+    margin: 57px 0 0 0;
+}
+
+.pricing-card:last-child span {
+    font-size: 32px;
+    font-weight: bold;
+}
+
 /* الخط الفاصل */
 hr {
     border: 0;
@@ -108,11 +118,11 @@ hr {
 }
 
 /* مميزات الخطة */
-.features {
+.caracters {
+    position: absolute;
     list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-left: 28px;
+    top: 361px;
+    left: 28px;
     display: flex;
     align-items: start;
     justify-content: start;
@@ -121,7 +131,7 @@ hr {
     gap: 0;
 }
 
-.features li {
+.caracters li {
     font-size: 14px;
     margin: 8px 0;
     color: #333;
@@ -130,7 +140,7 @@ hr {
 }
 
 /* أيقونات المميزات */
-.features li::before {
+.caracters li::before {
     content: "•";
     color: #7ed321;
     font-weight: bold;
@@ -141,13 +151,17 @@ hr {
 
 /* زر الترقية */
 .upgrade-button {
+    position: absolute;
+    bottom: 60px;
+    left: 105px;
     color: #2C2C2C;
     font-size: 17px;
     font-weight: 300;
     cursor: pointer;
     width: 190px;
     height: 44px;
-    margin-top: 58px;
-    transition: 0.3s;
-
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--page-background-color-2);
 }
