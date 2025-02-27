@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Switzer:wght@100..900&display=swap');
+
+.request-demo {
+    height: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+}
+
+/* تصميم القسم */
+.request-demo-content h2,
+.request-demo-content p {
+    text-align: center;
+    color: var(--page-background-color-2);
+    font-size: 32px;
+    margin: 30px 0;
+}
+
+.request-demo-content p {
+    font-family: "Switzer", sans-serif;
+    font-weight: 100;
+    line-height: 57px;
+}
+
+
+/* الفقرة التوضيحية */
+.section-subtitle {
+    font-size: 14px;
+    opacity: 0.8;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* حاوية الإدخال */
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 50px;
+}
+
+/* حقل البريد الإلكتروني */
+.email-input {
+    flex: 1;
+    max-width: 710px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+/* زر "Request Demo" */
+/* .demo-button {
+    background-color: #dfff00;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+} */
+
+/* تأثير الزر عند التحويم */
+.demo-button:hover {
+    background-color: #c4e600;
+}

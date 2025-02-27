@@ -1,0 +1,232 @@
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 179px;
+    background-color: var(--page-background-color-1);
+}
+
+.wrapper {
+    display: flex;
+    grid-column-gap: 100px;
+}
+
+/* القسم الأول: النصوص والمحتوى */
+.info-section {
+    width: 50%;
+    position: relative;
+}
+
+.title {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 38px;
+    color: #7a7a7a;
+    margin-bottom: 25px;
+}
+
+.automation-box {
+    position: relative;
+    background: linear-gradient(to right, rgba(142, 219, 9, 0.18), rgba(255, 240, 0, 0.18));
+    margin: 32px 25px 25px 0;
+    border-radius: 8px;
+    max-width: 630px;
+    padding: 34px 64px;
+}
+
+.automation-title {
+    margin: 0 0 20px 0;
+    color: #2c2c2ce8;
+    font-size: 22px;
+}
+
+.automation-title::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 26px;
+    background: var(--linear-background);
+    margin-right: 30px;
+    left: 20px;
+}
+
+.automation-text {
+    color: #2c2c2ccc;
+    font-size: 18px;
+}
+
+.caracters-list {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+.caracter-item {
+    display: flex;
+    align-items: center;
+    margin: 40px 0 40px 65px;
+    font-size: 18px;
+    color: #2c2c2ce1;
+}
+
+.caracter-item::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 26px;
+    background: var(--linear-background);
+    margin-right: 30px;
+    left: 20px;
+}
+
+.cta-button {
+    position: absolute;
+    right: 29px;
+    bottom: 63px;
+    background: var(--linear-background);
+    width: 165px;
+    height: 50px;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+/* تصميم صندوق المحادثة */
+.chatbox {
+    background: white;
+    border-radius: 12px;
+    width: 590px;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-left: 80px;
+    padding-bottom: 22px;
+}
+
+
+/* رأس صندوق المحادثة */
+.chat-header {
+    background: #5a5a5a;
+    /* لون مطابق */
+    color: white;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* توزيع العناصر بشكل صحيح */
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+}
+
+.dots {
+    position: relative;
+    height: 23px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 5px;
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    background-color: white;
+}
+
+
+/* قسم معلومات البوت */
+.bot-info {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+/* مؤشر حالة البوت */
+.status-indicator {
+    width: 26px;
+    height: 26px;
+    background: var(--linear-background);
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+/* أيقونة القائمة */
+.menu-icon {
+    width: 38px;
+    height: 4px;
+    background: white;
+    position: relative;
+    margin-right: 10px;
+}
+
+
+
+/* محتوى المحادثة */
+.chat-content {
+    padding: 21px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 17px;
+}
+
+/* الرسائل */
+.message {
+    color: #2C2C2C;
+    max-width: 80%;
+    padding: 15px 34.5px;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 1.4;
+    display: flex;
+    justify-content: center;
+}
+
+/* رسالة المستخدم */
+.user-message {
+    background: #8edb0980;
+    align-self: flex-end;
+}
+
+/* رسالة البوت */
+.bot-message {
+    background: #eceed285;
+    align-self: flex-start;
+    gap: 10px;
+    padding: 18px 36.5px;
+}
+
+/* أيقونة البوت */
+.bot-avatar {
+    width: 36px;
+    height: 36px;
+    background: var(--linear-background);
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+/* محتوى رسالة البوت */
+.bot-text {
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+/* تعليمات البوت */
+.bot-instructions {
+    font-weight: bold;
+}
+
+/* قائمة الإرشادات */
+.instruction-list {
+    padding-left: 18px;
+    margin-top: 5px;
+}
+
+.instruction-item {
+    margin-bottom: 5px;
+}
