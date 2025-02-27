@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 179px 0;
+    padding: 179px 80px;
     background-color: var(--page-background-color-1);
 }
 
 .wrapper {
     display: flex;
-    grid-column-gap: 100px;
+    grid-column-gap: 50px;
 }
 
 /* القسم الأول: النصوص والمحتوى */
