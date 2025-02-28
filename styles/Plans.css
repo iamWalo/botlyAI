@@ -39,6 +39,15 @@
     text-align: center;
     border: 1px solid #e0e8cf;
     margin: 0 10px;
+    transition: all .9s;
+}
+
+.pricing-card:hover {
+    width: 430px;
+    height: 720px;
+    box-shadow: 0 4px 14px #8edb09d7;
+    border: 1px solid #8EDB09;
+    margin: 0 15px;
 }
 
 .ribbon {
