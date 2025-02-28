@@ -34,6 +34,7 @@
     border-radius: 8px;
     width: 630px;
     padding: 10px 44px 10px 60px;
+    cursor: pointer;
 }
 
 .automation-box.active {
