@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (otherItem !== item) {
                     otherItem.querySelector(".faq-answer").style.display = "none";
                     otherItem.querySelector(".toggle-icon").textContent = "+";
-
+                    otherItem.classList.remove('active');
                 }
             });
 
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (answer.style.display === "block" || item.classList === "active") {
                 answer.style.display = "none";
                 icon.textContent = "+";
-                item.classList.remove('active')
+                item.classList.remove('active');
             } else {
                 answer.style.display = "block";
                 icon.textContent = "−";

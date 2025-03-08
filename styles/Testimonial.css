@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer_Complete/Fonts/OTF/Switzer-Light.otf') format('woff2'),
+        url('../fonts/Switzer_Complete/Fonts/OTF/Switzer-Light.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer_Complete/Fonts/OTF/Switzer-Regular.otf') format('woff2'),
+        url('../fonts/Switzer_Complete/Fonts/OTF/Switzer-Regular.otf') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 .testimonial {
     background-color: var(--page-background-color-1);
     width: 100%;
@@ -39,4 +56,41 @@
     font-style: italic;
     font-size: 18px;
     color: #2c2c2cb8;
+}
+
+@media (max-width:750px) {
+    .testimonial {
+        padding: 55px 60px;
+        width: 100%;
+        height: auto;
+    }
+
+    .testimonial h3 {
+        font-size: 26px;
+        font-weight: 800;
+        width: 100%;
+    }
+
+    .testimonial-content {
+        grid-template-columns: repeat(1, 100%);
+        grid-row-gap: 30px;
+        grid-column-gap: 0;
+
+    }
+
+    .testimonial-content div {
+        height: auto;
+        width: 468px;
+        margin-left: 20px;
+    }
+
+    .testimonial-content div p {
+        font-size: 17px;
+        font-weight: 100;
+        margin-bottom: 10px;
+    }
+
+    .testimonial-content div span {
+        font-size: 17px;
+    }
 }

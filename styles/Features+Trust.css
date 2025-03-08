@@ -74,3 +74,41 @@
     width: 133px;
     height: 52px;
 }
+
+@media (max-width:750px) {
+    .features-trust {
+        height: auto;
+    }
+
+    .features {
+        padding: 100px;
+        padding-bottom: 50px;
+        display: block;
+        gap: 60px;
+    }
+
+    .feature-box {
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .trust {
+        margin: 50px 0 150px 0;
+        padding: 100px;
+        padding-bottom: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        height: auto;
+        grid-gap: 80px;
+        grid-column-gap: 50px;
+    }
+
+    .trust div {
+        padding: 0 10px;
+    }
+
+    .trust div img {
+        min-width: 175px;
+        height: auto;
+    }
+}

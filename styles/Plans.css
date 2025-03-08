@@ -45,9 +45,10 @@
 .pricing-card:hover {
     width: 430px;
     height: 720px;
-    box-shadow: 0 4px 14px #8edb09d7;
-    border: 1px solid #8EDB09;
+    box-shadow: 0 5px 14px #8edb09b2;
+    border: 1px solid #8edb0984;
     margin: 0 15px;
+    padding-left: 10px;
 }
 
 .ribbon {
@@ -162,7 +163,7 @@ hr {
 .upgrade-button {
     position: absolute;
     bottom: 60px;
-    left: 105px;
+    left: 28%;
     color: #2C2C2C;
     font-size: 17px;
     font-weight: 300;
