@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer_Complete/Fonts/OTF/Switzer-Semibold.otf') format('woff2'),
+        url('../fonts/Switzer_Complete/Fonts/OTF/Switzer-Semibold.otf') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer_Complete/Fonts/OTF/Switzer-Extralight.otf') format('woff2'),
+        url('../fonts/Switzer_Complete/Fonts/OTF/Switzer-Extralight.otf') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
 
 .hero {
     background-color: var(--page-background-color-1);
@@ -7,33 +21,37 @@
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    padding-top: 90px;
+    padding-top: 130px;
     padding-bottom: 136px;
 }
 
 .hero p,
 .hero h1 {
-    font-size: 32px;
+    font-size: 34px;
 
 }
 
 .hero h1 {
     padding-bottom: 20px;
     font-weight: 500;
+    color: var(--text-color);
+    word-spacing: 5px;
 }
 
 
 .hero-text {
     position: relative;
     display: inline-block;
+    width: 80%;
 }
 
 
 .hero-text p {
     position: relative;
     line-height: 57px;
-    font-weight: 300;
     margin-bottom: 50px;
+    font-weight: 200;
+    word-spacing: 10px;
 }
 
 .highlight {
@@ -85,16 +103,21 @@
 }
 
 @media (max-width:750px) {
-
+    .hero {
+        padding: 90px 0;
+    }
 
 
     .hero p {
-        font-size: 19px;
+        font-size: 15px;
+        word-spacing: normal;
+        line-height: 35px;
     }
 
     .hero h1 {
-        font-size: 27px;
+        font-size: 15px;
         color: #2C2C2C;
+        word-spacing: normal;
     }
 
 
@@ -104,17 +127,13 @@
     }
 
 
-    .hero-text p {
-        font-weight: 300;
-        line-height: 42px;
-    }
 
     .highlight {
-        font-weight: normal;
+        font-weight: 300;
     }
 
     .highlight::after {
-        bottom: 10px;
+        bottom: 0px;
     }
 
 
@@ -134,8 +153,8 @@
     }
 
     .hero-image img {
-        width: 458px;
-        height: 310px;
+        width: 75%;
+        height: auto;
         margin-top: 111px;
     }
 }

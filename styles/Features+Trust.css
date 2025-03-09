@@ -81,7 +81,7 @@
     }
 
     .features {
-        padding: 100px;
+        padding: 40px 0px 40px 40px;
         padding-bottom: 50px;
         display: block;
         gap: 60px;
@@ -92,6 +92,11 @@
         margin: 30px 0;
     }
 
+    .icon-box {
+        width: 76px;
+        height: 74px;
+    }
+
     .trust {
         margin: 50px 0 150px 0;
         padding: 100px;
@@ -100,7 +105,7 @@
         width: 100%;
         height: auto;
         grid-gap: 80px;
-        grid-column-gap: 50px;
+        grid-column-gap: 40px;
     }
 
     .trust div {
@@ -108,7 +113,11 @@
     }
 
     .trust div img {
-        min-width: 175px;
+        width: 120px;
         height: auto;
+    }
+
+    .features-trust hr {
+        margin: 0px 0;
     }
 }

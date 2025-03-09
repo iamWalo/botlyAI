@@ -78,22 +78,30 @@ a {
 }
 
 @media (max-width:750px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        box-sizing: border-box;
+    }
 
     section,
     header,
     footer {
-        padding: 0 40px;
+        padding: 0 15px;
+        width: auto;
     }
 
     .white-btns {
-        width: 94px;
-        height: 38px;
+        width: 64px;
+        height: 29px;
+        font-size: 10px;
     }
 
     .linear-btn-style {
+        font-size: 10px;
         background: var(--linear-background);
-        width: 142px;
-        height: 38px;
+        width: 90px;
+        height: 29px;
         border-radius: 24px;
         border: none;
         cursor: pointer;

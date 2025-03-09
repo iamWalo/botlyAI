@@ -60,15 +60,14 @@
 
 @media (max-width:750px) {
     .testimonial {
-        padding: 55px 60px;
-        width: 100%;
+        padding: 55px 10px;
+        width: auto;
         height: auto;
     }
 
     .testimonial h3 {
-        font-size: 26px;
-        font-weight: 800;
-        width: 100%;
+        font-size: 20px;
+        font-weight: 600;
     }
 
     .testimonial-content {
@@ -80,7 +79,8 @@
 
     .testimonial-content div {
         height: auto;
-        width: 468px;
+        width: auto;
+        padding: 0 30px;
         margin-left: 20px;
     }
 
