@@ -12,9 +12,12 @@
 }
 
 /* القسم الأول: النصوص والمحتوى */
-.info-section {
-    width: 644px;
-    position: relative;
+@media (min-width:701px) {
+
+    .info-section {
+        width: 644px;
+        position: relative;
+    }
 }
 
 .title {
@@ -88,7 +91,6 @@
     left: 20px;
 }
 
-/* تصميم صندوق المحادثة */
 .chatbox {
     background: white;
     border-radius: 12px;
@@ -100,16 +102,13 @@
 }
 
 
-/* رأس صندوق المحادثة */
 .chat-header {
     background: #5a5a5a;
-    /* لون مطابق */
     color: white;
     padding: 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* توزيع العناصر بشكل صحيح */
     font-weight: bold;
     font-size: 14px;
     position: relative;
@@ -222,4 +221,209 @@
 
 .instruction-item {
     margin-bottom: 5px;
+}
+
+@media (max-width:700px) {
+    .info {
+        position: relative;
+        padding: 79px 0;
+    }
+
+    .wrapper {
+        display: block;
+        grid-column-gap: 0px;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+        padding-bottom: 50px;
+    }
+
+    .wrapper button {
+        position: absolute;
+
+        bottom: -87em;
+        left: 36.2%;
+    }
+
+    .info-section {
+        width: 100%;
+        position: relative;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+
+    .subtitle {
+        font-size: 1.4rem;
+    }
+
+    .automation-box {
+        position: relative;
+        border-radius: 8px;
+        width: 100%;
+        padding: 2px 28px 2px 30px;
+        cursor: pointer;
+    }
+
+    .automation-box.active {
+        margin: 20px 0;
+        padding: 20px;
+        padding-left: 32px;
+    }
+
+    .automation-title {
+        font-size: 1em;
+    }
+
+    .automation-title::before {
+        width: 18px;
+        height: 17px;
+        margin-right: 0;
+        left: 6px;
+        top: 5px;
+    }
+
+    .automation-box.active .automation-title::before {
+        left: 9px;
+        top: 22px;
+    }
+
+    .automation-text {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+        text-align: left;
+        max-width: 100%;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+
+
+    .chatbox {
+        background: white;
+        border-radius: 12px;
+        width: 100%;
+        height: auto;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        padding-bottom: 22px;
+        margin-top: 70px;
+    }
+
+
+    .chat-header {
+        background: #5a5a5a;
+        color: white;
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 14px;
+        position: relative;
+    }
+
+    .dots {
+        position: relative;
+        height: 23px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-column-gap: 5px;
+    }
+
+    .dot {
+        width: 4px;
+        height: 4px;
+        background-color: white;
+    }
+
+
+    .bot-info {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    .status-indicator {
+        width: 26px;
+        height: 26px;
+        background: var(--linear-background);
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+
+    .menu-icon {
+        width: 38px;
+        height: 4px;
+        background: white;
+        position: relative;
+        margin-right: 10px;
+    }
+
+
+
+    .chat-content {
+        padding: 21px;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 17px;
+    }
+
+    .message {
+        color: #2C2C2C;
+        max-width: 80%;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 12px;
+        line-height: 1.4;
+        display: flex;
+        justify-content: center;
+    }
+
+    .user-message {
+        background: #8edb0980;
+        align-self: flex-end;
+    }
+
+    .bot-message {
+        background: #eceed285;
+        align-self: flex-start;
+        gap: 0;
+        padding: 10px
+    }
+
+    /* أيقونة البوت */
+    .bot-avatar {
+        width: 20px;
+        height: 20px;
+
+    }
+
+    /* محتوى رسالة البوت */
+    .bot-text {
+        background: #f4f4f4;
+        border-radius: 10px;
+    }
+
+    /* تعليمات البوت */
+    .bot-instructions {
+        font-weight: bold;
+    }
+
+    /* قائمة الإرشادات */
+    .instruction-list {
+        padding-left: 18px;
+        margin-top: 5px;
+    }
+
+    .instruction-item {
+        margin-bottom: 5px;
+    }
 }

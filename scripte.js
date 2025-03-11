@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     otherItem.querySelector(".automation-text").style.display = "none";
                     // otherItem.querySelector(".toggle-icon").textContent = "+";
                     otherItem.classList.remove("active");
+                    console.log("clicked box")
                 }
             });
 
