@@ -1,0 +1,98 @@
+/* تصميم القسم الرئيسي */
+.faq-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 200px 310px;
+}
+
+.faq-content {
+    display: grid;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    gap: 30px;
+}
+
+/* العنوان الرئيسي */
+.faq-title {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* تصميم العناصر */
+.faq-item {
+    width: 802px;
+    padding: 34px 24px;
+    text-align: left;
+    background-color: var(--page-background-color-2);
+    /* box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1); */
+    border: .2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.faq-item.active {
+    background-color: var(--page-background-color-1);
+    min-height: 161px;
+}
+
+/* تصميم السؤال */
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #2c2c2cd9;
+}
+
+.faq-item.active .faq-question {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.icon {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* تصميم الإجابة */
+.faq-answer {
+    display: none;
+    padding: 0 15px 15px;
+    font-size: 17px;
+    color: #2c2c2cc4;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+/* تصميم الفوتر */
+.faq-footer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 27px;
+}
+
+.contact-btn {
+    width: 260px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.3s;
+    color: #2C2C2C;
+}
+
+.contact-btn:hover {
+    background-color: #ffd600;
+}

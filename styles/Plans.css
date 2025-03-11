@@ -175,3 +175,79 @@ hr {
     cursor: pointer;
     background-color: var(--page-background-color-2);
 }
+
+@media (max-width: 750px) {
+
+    .pricing-cards {
+        display: flex;
+        gap: 15px;
+        padding: 20px;
+        overflow-x: scroll;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+
+    .pricing-card {
+        max-width: 305px;
+        min-height: 605px;
+        height: auto;
+        padding: 24px;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+
+    .pricing-card:first-child {
+        margin-left: 708px;
+    }
+
+    .pricing-card:hover {
+        width: 305px;
+        height: auto;
+        box-shadow: 0 5px 14px #8edb09b2;
+        border: 1px solid #8edb0984;
+    }
+
+
+    .pricing-cards::-webkit-scrollbar {
+        display: none;
+    }
+
+    .card-content {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .plan-title {
+        font-size: 20px;
+    }
+
+    .plan-description {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+        text-align: center;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .price {
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 0;
+
+    }
+
+    .price span {
+        font-size: 32px;
+    }
+
+    .upgrade-button {
+        bottom: 50px;
+
+        left: 54px;
+    }
+
+
+}

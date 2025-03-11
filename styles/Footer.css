@@ -1,0 +1,154 @@
+/* تصميم الفوتر */
+.footer {
+    background-color: var(--page-background-color-1);
+    color: #333;
+    padding-top: 41px;
+    padding-bottom: 41px;
+}
+
+/* الحاوية الرئيسية للفوتر */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+/* القسم الأيسر: الشعار والاشتراك */
+.footer-left {
+    display: grid;
+    gap: 10px;
+    width: 505px;
+    height: 179px;
+}
+
+
+
+/* العنوان والنص */
+.subscribe-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.subscribe-text {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #2c2c2cbd;
+}
+
+/* نموذج الاشتراك */
+.subscribe-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subscribe-form input {
+    flex: 1;
+    width: 505px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.subscribe-form button {
+    position: absolute;
+    right: 10px;
+    border: none;
+    height: 40px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 
+.subscribe-form button:hover {
+    background: linear-gradient(to right, #b6d927, #f2d600);
+} */
+
+
+/* نص سياسة الخصوصية */
+.privacy-text {
+    font-size: 14px;
+    color: #2c2c2cc1;
+    margin-top: 10px;
+}
+
+.privacy-text a {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* روابط المنتج والشركة */
+.footer-links {
+    display: flex;
+    gap: 60px;
+    margin: 30px 50px 0 0;
+}
+
+.footer-column {
+    display: grid;
+    gap: 10px;
+    width: 122px;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 8px 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333333bc;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* 
+.footer-column ul li a:hover {
+    color: #57a500;
+} */
+
+/* الجزء السفلي للفوتر */
+.footer-bottom {
+    border-top: 1px solid #d1d5cc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    margin-top: 38px;
+}
+
+.footer-bottom p {
+    font-size: 15px;
+    color: #2c2c2cba;
+}
+
+/* أيقونات السوشيال ميديا */
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    opacity: 0.7;
+    transition: 0.3s;
+}
