@@ -204,8 +204,6 @@ hr {
     .pricing-card:hover {
         width: 305px;
         height: auto;
-        box-shadow: 0 5px 14px #8edb09b2;
-        border: 1px solid #8edb0984;
     }
 
 

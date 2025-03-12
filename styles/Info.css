@@ -37,7 +37,6 @@
     border-radius: 8px;
     width: 630px;
     padding: 10px 44px 10px 60px;
-    cursor: pointer;
 }
 
 .automation-box.active {
@@ -50,6 +49,7 @@
     margin: 0 0 20px 0;
     color: #2c2c2ce8;
     font-size: 22px;
+    cursor: pointer;
 }
 
 .automation-title::before {
@@ -253,7 +253,6 @@
     .title {
         text-align: center;
         font-size: 1.6rem;
-        font-weight: bold;
         margin-bottom: 50px;
     }
 
@@ -266,7 +265,6 @@
         border-radius: 8px;
         width: 100%;
         padding: 2px 28px 2px 30px;
-        cursor: pointer;
     }
 
     .automation-box.active {

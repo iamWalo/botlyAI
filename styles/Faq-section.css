@@ -96,3 +96,40 @@
 .contact-btn:hover {
     background-color: #ffd600;
 }
+
+@media (max-width:700px) {
+    .faq-section {
+        text-align: center;
+        width: 100%;
+        padding: 50px 10px;
+    }
+
+    .faq-content {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .faq-title {
+        font-size: 28px;
+    }
+
+    .faq-item {
+        width: 100%;
+        padding: 4px;
+    }
+
+
+    .faq-question {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .faq-answer {
+        font-size: 12px;
+    }
+
+    .faq-footer {
+        display: none;
+    }
+
+}

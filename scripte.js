@@ -61,3 +61,37 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+//  Footer scripte
+
+document.addEventListener("DOMContentLoaded", function () {
+    const footerColumn = document.querySelectorAll(".footer-column");
+    footerColumn.forEach((item) => {
+        const question = item.querySelector(".footer-column h4");
+        const links = item.querySelector(".footer-column ul");
+        const footerIcon = item.querySelector(".show-icon");
+
+        console.log(footerIcon);
+        question.addEventListener("click", () => {
+            // إغلاق جميع الأسئلة الأخرى
+            footerColumn.forEach((otherItem) => {
+                if (otherItem !== item) {
+                    otherItem.querySelector(".footer-column ul").style.display = "none";
+                    otherItem.querySelector(".show-icon").innerHTML = `<i class="fa-solid fa-angle-down"></i>`;
+                    otherItem.classList.remove('active');
+                }
+            });
+
+            // تبديل حالة العنصر الحالي
+            if (links.style.display === "block" || item.classList === "active") {
+                links.style.display = "none";
+                footerIcon.innerHTML = `<i class="fa-solid fa-angle-down"></i>`;
+                item.classList.remove('active');
+            } else {
+                links.style.display = "block";
+                footerIcon.innerHTML = `<i class="fa-solid fa-angle-up"></i>`;
+                item.classList.add('active')
+            }
+        });
+    });
+});
